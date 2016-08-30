@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC791311D64B8BF0002A05F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC791301D64B8BF0002A05F /* CoreMedia.framework */; };
 		AF1C44CE15257F24009AB77E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1C44CD15257F24009AB77E /* Cocoa.framework */; };
 		AF1C44D815257F24009AB77E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF1C44D615257F24009AB77E /* InfoPlist.strings */; };
 		AF1C44DA15257F24009AB77E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C44D915257F24009AB77E /* main.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FC791301D64B8BF0002A05F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		AF1C44C915257F24009AB77E /* ScreenRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1C44CD15257F24009AB77E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AF1C44D015257F24009AB77E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC791311D64B8BF0002A05F /* CoreMedia.framework in Frameworks */,
 				AF1C44EB15258015009AB77E /* AVFoundation.framework in Frameworks */,
 				AF1C44CE15257F24009AB77E /* Cocoa.framework in Frameworks */,
 			);
@@ -74,6 +77,7 @@
 		AF1C44CC15257F24009AB77E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FC791301D64B8BF0002A05F /* CoreMedia.framework */,
 				AF1C44EA15258015009AB77E /* AVFoundation.framework */,
 				AF1C44CD15257F24009AB77E /* Cocoa.framework */,
 				AF1C44CF15257F24009AB77E /* Other Frameworks */,
