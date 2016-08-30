@@ -18,7 +18,7 @@
 
 - (id) init {
   self.session = [[AVCaptureSession alloc] init];
-  //  self.session.sessionPreset = AVCaptureSessionPreset1280x720;
+  self.session.sessionPreset = AVCaptureSessionPresetHigh;
 
   self.input   = [[AVCaptureScreenInput alloc] initWithDisplayID:CGMainDisplayID()];
   self.input.capturesMouseClicks = YES;
@@ -28,7 +28,9 @@
 
   [self.session addInput:self.input];
   [self.session addOutput:self.output];
-
+    
+  [[self.output connectionWithMediaType:AVMediaTypeVideo] setVideoMinFrameDuration: CMTimeMake(1, 30)];
+  [[self.output connectionWithMediaType:AVMediaTypeVideo] setVideoMaxFrameDuration: CMTimeMake(1, 30)];
   return self;
 }
 
@@ -94,25 +96,3 @@
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
